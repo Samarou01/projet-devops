@@ -1,0 +1,24 @@
+- name: Installer serveur web
+  hosts: localhost
+  connection: local
+  become: yes
+
+  tasks:
+    - name: Update
+      apt:
+        update_cache: yes
+
+    - name: Installer nginx
+      apt:
+        name: nginx
+        state: present
+
+    - name: Démarrer nginx
+      service:
+        name: nginx
+        state: started
+
+    - name: Créer une page web personnalisée
+      copy:
+        content: "<h1>Bienvenue sur le serveur de Samarou 🚀</h1>"
+        dest: /var/www/html/index.html
