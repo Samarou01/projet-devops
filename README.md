@@ -1,18 +1,10 @@
-# Projet DevOps – Déploiement automatisé
+# Projet DevOps
 
-## Description
-Ce projet utilise Ansible pour automatiser l’installation et la configuration d’un serveur web nginx.
-
-## Technologies
-- Linux (Ubuntu)
+Projet de démonstration DevOps incluant :
+- Docker
+- Terraform
 - Ansible
-- Nginx
+- CI/CD GitHub Actions
 
-## Fonctionnalités
-- Installation automatique de nginx
-- Déploiement d’une page web personnalisée
-- Configuration automatisée du serveur
-
-## Lancer le projet
-```bash
-ansible-playbook -i hosts install_nginx.yml --ask-become-pass
+## Objectif
+Automatiser le déploiement et l’infrastructure.

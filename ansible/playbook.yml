@@ -1,0 +1,6 @@
+- hosts: all
+  tasks:
+    - name: Installer nginx
+      apt:
+        name: nginx
+        state: present
